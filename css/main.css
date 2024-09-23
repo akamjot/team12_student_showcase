@@ -1,0 +1,81 @@
+/* 1. -----Genral Styles-----*/
+body {
+    color: #242380;
+    font-family: 'Segoe UI', 'Times New Roman', serif;
+    font-size: 16px;
+ }
+ 
+ a {
+    text-decoration: none;
+    transition: all .1s ease-in;
+ }
+ 
+ input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+
+
+  /* 2. ---Main Nav--- */
+ 
+
+  #main-nav label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-bottom: 20px; 
+ } 
+ 
+ #main-nav input, #burger-con {
+    display: none;
+ }
+  
+ #main-nav input:checked ~ #burger-con {
+    display: block;
+ }
+ 
+ #main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+ }
+ 
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #242380;
+ }
+ 
+ #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ 
+ 
+ #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ } 
+ 
+
+ 
+ #logo {
+    max-width: 288px;
+    margin-bottom: 20px;
+ }
+
+ #burger {
+    margin-top: 50px;
+ }
+
