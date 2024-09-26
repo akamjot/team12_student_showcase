@@ -1,0 +1,305 @@
+/* 1. -----Genral Styles-----*/
+body {
+    color: #242380;
+    font-family: 'Segoe UI', 'Times New Roman', serif;
+    font-size: 16px;
+ }
+ 
+ a {
+    text-decoration: none;
+    transition: all .1s ease-in;
+ }
+ 
+ input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+
+
+  /* 2. ---Main Nav--- */
+ 
+
+  #main-nav label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-bottom: 20px; 
+ } 
+ 
+ #main-nav input, #burger-con {
+    display: none;
+ }
+  
+ #main-nav input:checked ~ #burger-con {
+    display: block;
+ }
+ 
+ #main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+ }
+ 
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #242380;
+ }
+ 
+ #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ 
+ 
+ #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ } 
+ 
+
+ 
+ #logo {
+    max-width: 288px;
+    margin-bottom: 20px;
+ }
+
+ #burger {
+    margin-top: 50px;
+ }
+
+ #banner {
+   text-align: center;
+   background-color: #c3c3c3;
+   height: 300px;
+ }
+ 
+ h1 {
+   color: #E02626;
+ }
+
+ p,h1,h2,h3 {
+   margin-bottom: 10px;
+ }
+
+ #finale-project {
+   text-align: center;
+ }
+
+ #event-details {
+   text-align: center;
+ }
+
+ .event-box {
+   border: black 1px solid ;
+   border-radius: 50px;
+   height: 250px;
+   text-align: center;
+   margin-top: 30px;
+   
+ }
+
+ .event-box h3 {
+   padding-top: 50px;
+ }
+
+ .event-box p {
+   padding-top: 20px;
+ }
+
+#spot {
+   text-align: center;
+   margin-top: 30px;
+   
+}
+
+#spot h2 {
+   border-bottom: 4px black solid;
+   width: fit-content;
+   margin-left: 40%;
+}
+
+.container {
+   background-color: #c3c3c3;
+   height: 400px;
+   margin-top: 40px;
+}
+
+.container p {
+   margin-top: 70%;
+   border-top: 2px black solid;
+   padding-top: 10px;
+}
+
+#mentions {
+   text-align: center;
+   margin-top: 30px;
+   
+}
+
+#mentions h2 {
+   border-bottom: 4px black solid;
+   width: fit-content;
+   margin-left: 40%;
+}
+
+#project {
+   margin-top: 100px;
+}
+
+.project-container {
+   background-color: #c3c3c3;
+   border-radius: 40px;
+   height: 300px;
+   margin-top: 50px;
+}
+
+.heading-container {
+   border-radius: 40px;
+   height: 300px;
+   margin-top: 50px;
+}
+
+.heading-container h2 {
+   text-align: center;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   border-bottom: 4px black solid;
+   width: fit-content;
+   left: 35%;
+}
+
+#reviews h2 {
+   border-bottom: 4px black solid;
+   width: fit-content;
+   margin-left: 45%;
+   margin-top: 30px;
+}
+
+.review-container {
+   border: 1px black solid;
+   height: 200px;
+   border-radius: 60px;
+   margin-top: 20px;
+   
+}
+
+#course-details h2 {
+   margin-top: 30px;
+}
+
+#course-details p {
+   margin-top: 20px;
+}
+
+#learn-more-button {
+   height: 40px;
+   color:#242380;
+   border-radius: 10px;
+   font-size: 20px;
+   border: #0a0202;
+}
+
+#dev-spotlight h2 {
+   border-bottom: 4px black solid;
+   width: fit-content;
+   margin-left: 40%;
+   margin-top: 30px;
+}
+
+.dev-container {
+   border: 1px black solid;
+   height: 50px;
+   border-radius: 60px;
+   margin-top: 20px;
+   
+}
+
+#portfolio-gallery h2 {
+   border-bottom: 4px black solid;
+   width: fit-content;
+   margin-left: 37%;
+   margin-top: 30px;
+}
+
+.gallery-container {
+   border: 1px black solid;
+   height: 50px;
+   border-radius: 60px;
+   margin-top: 20px;
+   
+}
+
+#footer {
+   background-color: #E02626;
+   height: 300px;
+   margin-top: 30px;
+}
+
+
+ @media screen and (min-width: 768px) {
+
+
+
+ 
+   #sticky-nav-con {
+      position: sticky;
+      top: 0px;
+      background-color: #fff;
+      border-bottom: solid 1px #c3c3c3;
+      z-index: 1;
+   }
+
+   #hamburger {
+     display: none;
+   }
+
+   #burger {
+     display: none;
+   }
+
+   #logo {
+      margin-top: 25px;
+      order: -1;
+      height: 100px;
+      width: 200px;
+
+   }
+
+   #button {
+      display: none;
+   }
+
+   #burger-con {
+      display: inline;
+      font-size: 12px;
+   }
+
+  
+
+   #main-nav ul li a {
+      display: inline-block;
+      font-size: 16px;
+      padding-right: 7px;
+      font-weight: bold;
+   }
+
+   #main-nav ul li a:hover {
+     font-size: 18px;
+
+  }
+
+
+}
