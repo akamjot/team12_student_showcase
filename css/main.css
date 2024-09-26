@@ -270,7 +270,7 @@ button:hover {
    #sticky-nav-con {
       position: sticky;
       top: 0px;
-      background-color: #fff;
+      background-color: #E02626;
       border-bottom: solid 1px #c3c3c3;
       z-index: 1;
    }
@@ -285,7 +285,6 @@ button:hover {
 
    #logo {
       margin-top: 25px;
-      order: -1;
       height: 100px;
       width: 200px;
 
@@ -296,7 +295,7 @@ button:hover {
    }
 
    #burger-con {
-      display: inline;
+      display: block;
       font-size: 12px;
    }
 
