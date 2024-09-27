@@ -23,6 +23,7 @@ body {
   #main-nav label img {
     width: 20px;
     height: 20px;
+    color: #E02626;
     margin-top: 15px;
     cursor: pointer;
     transition: all .5s ease;
@@ -36,6 +37,7 @@ body {
  #main-nav input:checked ~ #burger-con {
     display: block;
  }
+
  
  #main-nav input:checked ~ label img {
     transform: rotate(90deg);
@@ -51,7 +53,7 @@ body {
     display: block;
     padding: 10px 0 10px 0;
     text-align: center;
-    color: #242380;
+    color: white;
  }
  
  #main-nav ul li {
@@ -67,12 +69,28 @@ body {
  #main-nav ul li:last-child {
     margin-bottom: 10px;
  } 
+
+ #sticky-nav-con{
+   background-color: #E02626;
+ }
  
 
  
  #logo {
-    max-width: 288px;
-    margin-bottom: 20px;
+   display: none;
+ }
+
+ #logo-mobile-1{
+    margin-top: -50px;
+ }
+
+ #main-nav input::after:checked ~ #logo-mobile-1::after {
+   display: none;
+ }
+
+ #logo-mobile-2 {
+   margin-top: -45px;
+   margin-left: 25px;
  }
 
  #burger {
