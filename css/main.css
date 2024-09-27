@@ -1,6 +1,6 @@
 /* 1. -----Genral Styles-----*/
 body {
-    color: #242380;
+    color: black;
     font-family: 'Segoe UI', 'Times New Roman', serif;
     font-size: 16px;
  }
@@ -23,6 +23,7 @@ body {
   #main-nav label img {
     width: 20px;
     height: 20px;
+    color: #E02626;
     margin-top: 15px;
     cursor: pointer;
     transition: all .5s ease;
@@ -36,10 +37,15 @@ body {
  #main-nav input:checked ~ #burger-con {
     display: block;
  }
+
  
  #main-nav input:checked ~ label img {
     transform: rotate(90deg);
  }
+
+ #main-nav input:checked ~ #logo-mobile-1 {
+     margin-bottom: 70px;
+} 
  
  #main-nav ul {
     list-style: none;
@@ -51,7 +57,7 @@ body {
     display: block;
     padding: 10px 0 10px 0;
     text-align: center;
-    color: #242380;
+    color: white;
  }
  
  #main-nav ul li {
@@ -67,12 +73,23 @@ body {
  #main-nav ul li:last-child {
     margin-bottom: 10px;
  } 
- 
+
+ #sticky-nav-con{
+   background-color: #E02626;
+ }
 
  
  #logo {
-    max-width: 288px;
-    margin-bottom: 20px;
+   display: none;
+ }
+
+ #logo-mobile-1{
+    margin-top: -50px;
+ }
+
+ #logo-mobile-2 {
+   margin-top: -50px;
+   margin-left: 25px;
  }
 
  #burger {
@@ -85,16 +102,21 @@ body {
    height: 300px;
  }
  
- h1 {
+ h1,h3 {
    color: #E02626;
  }
 
  p,h1,h2,h3 {
-   margin-bottom: 10px;
+   margin-bottom: 20px;
  }
 
  #finale-project {
    text-align: center;
+ }
+
+ .video-container {
+   height: fit-content;
+   width: fit-content;
  }
 
  #event-details {
@@ -204,12 +226,20 @@ body {
    margin-top: 20px;
 }
 
-#learn-more-button {
+button {
    height: 40px;
-   color:#242380;
-   border-radius: 10px;
+   color:black;
+   border-radius: 15px;
    font-size: 20px;
-   border: #0a0202;
+   border: none;
+   background-color: #ffc7c7;
+}
+
+button:hover {
+   transform: scale(1.2);
+   transition: all .5s ease-in-out;
+   background-color: #ffc7c7;
+   cursor: pointer;
 }
 
 #dev-spotlight h2 {
@@ -257,7 +287,7 @@ body {
    #sticky-nav-con {
       position: sticky;
       top: 0px;
-      background-color: #fff;
+      background-color: #E02626;
       border-bottom: solid 1px #c3c3c3;
       z-index: 1;
    }
@@ -272,7 +302,6 @@ body {
 
    #logo {
       margin-top: 25px;
-      order: -1;
       height: 100px;
       width: 200px;
 
@@ -283,7 +312,7 @@ body {
    }
 
    #burger-con {
-      display: inline;
+      display: block;
       font-size: 12px;
    }
 
@@ -303,3 +332,41 @@ body {
 
 
 }
+
+ 
+@media screen and (min-width: 1200px) {
+
+
+   #main-header {
+      height: 110px;
+   }
+
+
+   #main-nav {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 25px;
+   }
+
+   #burger-con ul li {
+      margin-right: 25px;
+   }
+
+   #main-nav ul li a {
+     font-size: 16px;
+     padding-right: 15px;
+  }
+
+  #burger-con ul li:last-child {
+     margin-right: 0px;
+     padding-right: 0;
+  }
+
+
+   #burger-con {
+      font-size: 16px;
+      margin-top: 28px;
+   }
+
+}
+
