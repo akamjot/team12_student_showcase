@@ -65,12 +65,37 @@
 
             <p class="m-col-start-3 m-col-end-11">  The memorial will honor the bravery of Indian and Canadian soldiers who fought together. Over time, it will become a peaceful park with trails, benches, and displays, preserving their stories and sacrifices for future generations.</p>
         </section>
-
+        
+        <div class="grid-con">
         <section id="video" class="video-container m-col-start-3 m-col-end-11 ">
-            <video src="video/INDUSTRY_NIGHT.mp4"></video>
+            <video controls preload="metadata">
+                <source src="video/INDUSTRY_NIGHT.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-controls hidden" id="video-controls">
+                <button id="play-button">
+                    <i class="fa fa-play-circle-o"></i>
+                </button>
+
+                <button id="pause-button">
+                    <i class="fa fa-pause-circle-o"></i>
+                </button>
+
+                <button id="stop-button">
+                    <i class="fa fa-stop-ciricle-o"></i>
+                </button>
+                <i class="fa fa-volume-up"></i>
+                <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+
+                <button id="full-screen">
+                    <i class="fa fa-arrows-alt"></i>
+                </button>
+            </div>
         </section>
+        </div>
 
         <section id="event-details" class="grid-con">
+        
             
             <h2 class="m-col-start-3 m-col-end-11">EVENT DETAILS</h2>
             <p class="m-col-start-3 m-col-end-11">Join us for a showcase of work by IDP3 and UED students, featuring Spotlight presentations on the Brothers in Arms project.</p>
