@@ -1,6 +1,6 @@
 # Hackathon
 ### Team member
-Zhang	Bozhi
-Chen	Qingdong
-Singh	Akamjot
-Ogbeide	Osarieme
+Zhang	Bozhi<br>
+Chen	Qingdong<br>
+Singh	Akamjot<br>
+Ogbeide	Osarieme<br>
