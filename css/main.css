@@ -42,6 +42,10 @@ body {
  #main-nav input:checked ~ label img {
     transform: rotate(90deg);
  }
+
+ #main-nav input:checked ~ #logo-mobile-1 {
+     margin-bottom: 70px;
+} 
  
  #main-nav ul {
     list-style: none;
@@ -73,7 +77,6 @@ body {
  #sticky-nav-con{
    background-color: #E02626;
  }
- 
 
  
  #logo {
@@ -84,12 +87,8 @@ body {
     margin-top: -50px;
  }
 
- #main-nav input::after:checked ~ #logo-mobile-1::after {
-   display: none;
- }
-
  #logo-mobile-2 {
-   margin-top: -45px;
+   margin-top: -50px;
    margin-left: 25px;
  }
 
@@ -333,3 +332,41 @@ button:hover {
 
 
 }
+
+ 
+@media screen and (min-width: 1200px) {
+
+
+   #main-header {
+      height: 110px;
+   }
+
+
+   #main-nav {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 25px;
+   }
+
+   #burger-con ul li {
+      margin-right: 25px;
+   }
+
+   #main-nav ul li a {
+     font-size: 16px;
+     padding-right: 15px;
+  }
+
+  #burger-con ul li:last-child {
+     margin-right: 0px;
+     padding-right: 0;
+  }
+
+
+   #burger-con {
+      font-size: 16px;
+      margin-top: 28px;
+   }
+
+}
+
