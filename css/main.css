@@ -20,6 +20,10 @@ body {
    font-weight: bold;
  }
 
+ .hidden {
+   display: none;
+ }
+
 
   /* 2. ---Main Nav--- */
  
@@ -129,15 +133,13 @@ body {
  }
 
 #spot {
-   text-align: center;
    margin-top: 30px;
    
 }
 
 #spot h2 {
-   border-bottom: 4px black solid;
-   width: fit-content;
-   margin-left: 40%;
+   text-decoration: underline;
+   text-align: center;
 }
 
 .container {
@@ -153,15 +155,13 @@ body {
 }
 
 #mentions {
-   text-align: center;
    margin-top: 30px;
    
 }
 
 #mentions h2 {
-   border-bottom: 4px black solid;
-   width: fit-content;
-   margin-left: 40%;
+   text-decoration: underline;
+   text-align: center;
 }
 
 #project {
@@ -192,9 +192,8 @@ body {
 }
 
 #reviews h2 {
-   border-bottom: 4px black solid;
-   width: fit-content;
-   margin-left: 45%;
+   text-decoration: underline;
+   text-align: center;
    margin-top: 30px;
 }
 
@@ -237,9 +236,8 @@ button:hover {
 }
 
 #dev-spotlight h2 {
-   border-bottom: 4px black solid;
-   width: fit-content;
-   margin-left: 40%;
+   text-decoration: underline;
+   text-align: center;
    margin-top: 30px;
 }
 
@@ -252,9 +250,8 @@ button:hover {
 }
 
 #portfolio-gallery h2 {
-   border-bottom: 4px black solid;
-   width: fit-content;
-   margin-left: 37%;
+   text-decoration: underline;
+   text-align: center;
    margin-top: 30px;
 }
 
@@ -270,17 +267,30 @@ button:hover {
    background-color: #E02626;
    height: 200px;
    margin-top: 30px;
-   align-items: center;
-}
-
-#footer img {
-   align-items: center;
 }
 
 h3 {
    text-align: center;
 }
 
+.footer-logo {
+   display: flex;
+   justify-content: center;
+   
+
+}
+
+.social {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.social img {
+   width: 60px;
+   height: 60px;
+   padding: 10px;
+}
 
 
  @media screen and (min-width: 768px) {
