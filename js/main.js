@@ -1,7 +1,8 @@
 console.log("JS Worked!");
+(() => {const player = new Plyr('video');
+})();
 
-
-const player = document.querySelector("video");
+/*const player = document.querySelector("video");
 const videoControls = document.querySelector("#video-controls");
 const playButton = document.querySelector("#play-button");
 const pauseButton = document.querySelector("#pause-button");
@@ -75,3 +76,4 @@ videoControls.addEventListener("mouseenter", showControls);
 videoControls.addEventListener("mouseleave", hideControls);
 player.addEventListener("mouseenter", showControls);
 player.addEventListener("mouseleave", hideControls);
+*/
