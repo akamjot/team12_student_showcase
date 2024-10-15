@@ -16,6 +16,10 @@ body {
     padding: 0;
  }
 
+ .boldtext {
+   font-weight: bold;
+ }
+
 
   /* 2. ---Main Nav--- */
  
@@ -76,12 +80,10 @@ body {
 
 #logo {
    max-width: 288px;
-   margin-bottom: 20px;
+   padding-top: 10px;
 }
 
-#burger {
-   margin-top: 50px;
-}
+
  #banner {
    text-align: center;
    background-color: #c3c3c3;
@@ -196,6 +198,12 @@ body {
    margin-top: 30px;
 }
 
+#reviews p {
+   text-align: center;
+   margin-top: 20px;
+
+}
+
 .review-container {
    border: 1px black solid;
    height: 200px;
@@ -269,6 +277,10 @@ button:hover {
    align-items: center;
 }
 
+h3 {
+   text-align: center;
+}
+
 
 
  @media screen and (min-width: 768px) {
@@ -286,6 +298,9 @@ button:hover {
 
    #main-header {
       height: 110px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
    }
    
    #hamburger {
@@ -295,14 +310,7 @@ button:hover {
    #burger {
      display: none;
    }
-
-   #logo {
-      margin-top: 25px;
-      order: -1;
-      height: 100px;
-      width: 200px;
-
-   }
+ 
 
    #button {
       display: none;
@@ -328,7 +336,6 @@ button:hover {
 
    #main-nav ul{
       margin-left: 80px;
-      margin-top: -40px;
       text-align: right;
    }
 
@@ -348,9 +355,12 @@ button:hover {
 
    #main-nav {
       padding-left: 30px;
-      margin-top: 4%;
-      margin-bottom: 4%;
-      margin-top: 12%;
+   }
+
+   .review-container {
+      
+      height: 250px;
+      
    }
 
   
@@ -363,14 +373,11 @@ button:hover {
 
    #main-header {
       height: 110px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
    }
 
-
-   #main-nav {
-      margin-top: 2%;
-      margin-bottom: 2%;
-      margin-left: 25px;
-   }
 
    #burger-con ul li {
       margin-right: 25px;
@@ -389,10 +396,11 @@ button:hover {
 
    #burger-con {
       font-size: 16px;
-      margin-top: 28px;
    }
 
-   #main-nav ul{
-      margin-top: 35px;
+  
+
+   .review-container {
+      height: 200px;
    }
 }
