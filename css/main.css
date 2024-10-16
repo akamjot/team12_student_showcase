@@ -2,7 +2,7 @@
 body {
     color: black;
     font-family: 'Segoe UI', 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 15px;
  }
  
  a {
@@ -108,8 +108,13 @@ body {
  }
 
 
- p,h1,h2,h3 {
+ p,h1,h2 {
    margin-bottom: 20px;
+ }
+
+ h3 {
+   margin-top: 20px;
+   margin-bottom: 10px;
  }
 
  #finale-project {
@@ -126,20 +131,27 @@ body {
  }
 
  .event-box {
-   border: black 1px solid ;
+   border:  1px  ;
    border-radius: 50px;
    height: 250px;
    text-align: center;
    margin-top: 30px;
+   box-shadow: 0px 10px 20px -5px rgba(165, 114, 114, 0.8);
    
  }
 
+ .event-box:hover {
+   box-shadow: 0px 10px 40px -5px rgba(165, 114, 114, 0.8);
+   transform: scale(1.05);
+   transition: transform .3s ease-in-out, box-shadow 0.3s ease;
+ }
+
  .event-box h3 {
-   padding-top: 50px;
+   margin-top: 10px;
  }
 
  .event-box p {
-   padding-top: 20px;
+   margin: 10px;
  }
 
 #spot {
@@ -156,6 +168,13 @@ body {
    background-color: #c3c3c3;
    height: 400px;
    margin-top: 40px;
+   box-shadow: 0px 10px 20px -5px rgba(165, 114, 114, 0.8);
+}
+
+.container:hover {
+   box-shadow: 0px 10px 40px -5px rgba(165, 114, 114, 0.8);
+   transform: scale(1.05);
+   transition: transform .3s ease-in-out, box-shadow 0.3s ease;
 }
 
 .container p {
@@ -183,6 +202,13 @@ body {
    border-radius: 40px;
    height: 300px;
    margin-top: 50px;
+   box-shadow: 0px 10px 20px -5px rgba(165, 114, 114, 0.8);
+}
+
+.project-container:hover {
+   box-shadow: 0px 10px 40px -5px rgba(165, 114, 114, 0.8);
+   transform: scale(1.05);
+   transition: transform .3s ease-in-out, box-shadow 0.3s ease;
 }
 
 .heading-container {
@@ -206,16 +232,22 @@ body {
 
 #reviews p {
    text-align: center;
-   margin-top: 20px;
+   margin: 20px;
 
 }
 
 .review-container {
-   border: 1px black solid;
+   border: 1px ;
    height: 200px;
    border-radius: 60px;
    margin-top: 20px;
-   
+   box-shadow: 0px 10px 20px -5px rgba(165, 114, 114, 0.8);  
+}
+
+.review-container:hover {
+   box-shadow: 0px 10px 40px -5px rgba(165, 114, 114, 0.8);
+   transform: scale(1.05);
+   transition: transform .3s ease-in-out, box-shadow 0.3s ease;
 }
 
 #course-details h2 {
@@ -254,11 +286,17 @@ button:hover {
 }
 
 .dev-container {
-   border: 1px black solid;
+   border: 1px ;
    height: 100px;
-   border-radius: 60px;
+   border-radius: 40px;
    margin-top: 20px;
-   
+   box-shadow: 0px 10px 20px -5px rgba(165, 114, 114, 0.8);
+}
+
+.dev-container:hover {
+   box-shadow: 0px 10px 40px -5px rgba(165, 114, 114, 0.8);
+   transform: scale(1.05);
+   transition: transform .3s ease-in-out, box-shadow 0.3s ease;
 }
 
 #portfolio-gallery h2 {
@@ -266,6 +304,7 @@ button:hover {
    text-align: center;
    margin-top: 30px;
 }
+
 
 #portfolio-gallery a {
    display: flex;
@@ -275,16 +314,25 @@ button:hover {
 
 
 .gallery-container {
-   border: 1px black solid;
+   border: 1px ;
    height: 100px;
-   border-radius: 60px;
+   border-radius: 40px;
    margin-top: 20px;
+   box-shadow: 0px 10px 20px -5px rgba(165, 114, 114, 0.8);
+   
+}
+
+
+.gallery-container:hover {
+   box-shadow: 0px 10px 40px -5px rgba(165, 114, 114, 0.8);
+   transform: scale(1.05);
+   transition: transform .3s ease-in-out, box-shadow 0.3s ease;
    
 }
 
 #footer {
    background-color: #E02626;
-   height: 210px;
+   height: 220px;
    margin-top: 30px;
 }
 
@@ -320,6 +368,9 @@ h3 {
  @media screen and (min-width: 768px) {
 
 
+   body {
+      font-size: 16px;
+   }
 
  
    #sticky-nav-con {
