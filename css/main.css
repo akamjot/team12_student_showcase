@@ -197,10 +197,22 @@ body {
    margin-top: 100px;
 }
 
-.project-container {
-   background-color: #c3c3c3;
+#project img {
    border-radius: 40px;
-   height: 300px;
+   height: 200px;
+   margin-top: 50px;
+   box-shadow: 0px 10px 20px -5px rgba(165, 114, 114, 0.8);
+}
+
+#project img:hover {
+   box-shadow: 0px 10px 40px -5px rgba(165, 114, 114, 0.8);
+   transform: scale(1.05);
+   transition: transform .3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.project-container {
+   border-radius: 40px;
+   height: 200px;
    margin-top: 50px;
    box-shadow: 0px 10px 20px -5px rgba(165, 114, 114, 0.8);
 }
@@ -391,7 +403,9 @@ h3 {
 
 
 
-/* video controls */
+/*////////////////////////////////////////////////video controls/////////////////////////////////////////////////////////*/
+
+
 
 #player-container {
    position: relative;
@@ -498,6 +512,7 @@ h3 {
    outline-offset: 0.125rem;
  }
 
+/*/////////////////////////////////////////////////////////images//////////////////////////////////////////////////////////////*/
 
  @media screen and (min-width: 768px) {
 
@@ -582,6 +597,11 @@ h3 {
       
    }
 
+   #project img {
+
+      height: 300px;
+
+   }
   
 
 }
